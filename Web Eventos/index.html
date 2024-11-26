@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos Web</title>
+</head>
+<body style="text-align: justify;">
+    <!--Boas vindas-->
+    <header>
+        <h1>Bem Vindo a Página de Eventos!</h1>
+        <p>Se deseja participar desse incrível evento Tech que ocorrerá no Centro de Eventos, por favor preencha o formulário abaixo.</p>
+    </header>
+
+    <!--Principal-->
+    <main>
+        <!--Formulário-->
+        <section>
+            <form action="/enviar" method="post">
+                <!--Nome-->
+                <label for="name">Nome Completo: </label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+
+                <!--Data de nascimento-->
+                <label for="data">Data de Nascimento: </label>
+                <input type="date" id="data" name="data" required>
+                <br><br>
+
+                <!--E-mail-->
+                <label for="email">E-mail: </label>
+                <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com.br" required>
+
+                <!--Telefone-->
+                <label for="telefone">Telefone: </label>
+                <input type="tel" id="telefone" name="telefone" placeholder="Somente números" required>
+                <br><br>
+
+                <!--Gênero-->
+                <label>Gênero:</label>
+                <br>
+                
+                <input type="radio" id="masculino" name="genero" value="masculino" required>Masculino</input>
+                <br>
+                <input type="radio" id="feminino" name="genero" value="feminino" required>Feminino</input>
+                <br>
+                <input type="radio" id="naoinformar" name="genero" value="naoinformar" required>Prefiro não informar</input>
+                <br><br>
+
+                <!--Interesses-->
+                <label>Interesses:</label>
+                <br>
+                <input type="checkbox" id="tecnologia" name="interesses" value="tecnologia">Tecnologia</input>
+                <br>
+                <input type="checkbox" id="negocios" name="interesses" value="negocio">Negócios</input>
+                <br>
+                <input type="checkbox" id="design" name="interesses" value="design">Design</input>
+                <br><br>
+
+                <!--Cometário sobre o evento-->
+                <label for="comentario">Digite aqui suas expectativas para o evento: </label>
+                <br><br>
+                <textarea id="comentario" name="comentario" rows="4" cols="50" placeholder="Digite aqui suas expectativas..."></textarea>
+                <br><br>
+
+                <!--Enviar o currículo-->
+                <label for="curriculo">Envie seu Currículo para o Evento aqui: </label>
+                <input type="file" id="curriculo" name="curriculo">
+                <br><br>
+                
+                <!--Botão para enviar o formulário-->
+                <input type="submit" value="Enviar">
+                <br><br>
+            </form>
+        </section>
+
+        <!--Tabela do evento-->
+        <section>
+            <table border="3">
+                <!--Cabeçalho da tabela-->
+                <thead>
+                    <tr>
+                        <th>Palestras</th>
+                        <th>Palestrantes</th>
+                        <th>Local</th>
+                        <th>Horário</th>
+                    </tr>
+                </thead>
+
+                <!--Corpo da tabela-->
+                <tbody>
+                    <tr>
+                        <td>Inovação, Tecnologia, Tendências e Transformações no Cenário Global</td>
+                        <td>Professor Fulano</td>
+                        <td>Salão Mundaú</td>
+                        <td>13:30h</td>
+                    </tr>
+                    <tr>
+                        <td>E-commerce como Estratégia de Negócio</td>
+                        <td>Cicrano Oliveira</td>
+                        <td>Salão Taíba</td>
+                        <td>15:00h</td>
+                    </tr>
+                    <tr>
+                        <td>Processo Criativo em Design</td>
+                        <td>Deutrano Junior</td>
+                        <td>Salão Almofala</td>
+                        <td>16:30h</td>
+                    </tr>
+                </tbody>
+
+                <!--Rodapé da tabela-->
+                <tfoot>
+                    <tr>
+                        <td colspan="4">Todas as palestras terão certificado de participação para as pessoas devidamente cadastradas!</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <!--Mídias-->
+        <section>
+            <br><br>
+            <h2>O local será no Centro de Eventos no Térreo</h2>
+            <br>
+            <!--Imagens do local-->
+            <figure>
+                <img src="midia/Centro_de_Eventos_do_Ceará.png" alt="Centro de Eventos" width="300" height="200">
+                <figcaption>Centro de Eventos</figcaption>
+            </figure>
+            <figure>
+                <img src="https://centrodeeventos.ce.gov.br/wp-content/uploads/2014/06/pavilhao-oeste-terreo.png" alt="Térreo" width="300" height="200">
+                <figcaption>Térreo</figcaption>
+            </figure>
+            <br>
+            
+            <!--Podcast-->
+            <h3>Confira esses conteúdos incríveis!</h3>
+            <label>Tecnologia e IA - Fabio Akita:</label>
+            <br>
+            <audio controls>
+            <source src="midia/tecnologia_ia_fabio_akita.mp3" type="audio/mp3">
+            
+            Seu navegador não suporta o elemento de áudio.
+            </audio>
+            <br><br>
+            
+            <!--Vídeos-->
+            <video width="560" height="315" controls>
+            <source src="midia/centro_de_eventos_fortaleza.mp4" type="video/mp4">
+            
+            Seu navegador não suporta o elemento de vídeo.
+            </video>
+            <br><br>
+            
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/wLEw36KAVfU?si=jIDvpQo8DmVgLm9Z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <br><br>
+
+            <!--PDF's-->
+            <embed src="https://repositorio.ipea.gov.br/bitstream/11058/9293/1/TD_2470.pdf" width="600" height="500" type="application/pdf">
+            <br><br>
+
+            <object data="https://ppgtic.ufsc.br/files/2016/05/Ebook.pdf" width="600" height="500">
+                <p>Seu navegador não suporta a exibição de PDFs.</p>
+            </object>
+        </section>
+    </main>
+</body>
+</html>
