@@ -1,0 +1,147 @@
+body {
+    background-image: url(images/coffeen-bean-background.jpg);
+    background-size: cover;
+    font-family: sans-serif;
+    padding: 20px;
+}
+  
+h1 {
+    font-size: 40px;
+    background: linear-gradient(90deg, rgb(135, 134, 134), rgb(65, 65, 65), rgb(0, 0, 0));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+  
+h2 {
+    font-size: 30px;
+}
+
+.slogan {
+    font-size: 15px;
+}
+  
+.established {
+    font-style: italic;
+}
+  
+h1, h2, p {
+    text-align: center;
+}
+
+/* MENU */
+  
+.menu {
+    width: 80%;
+    background: linear-gradient(rgb(238, 156, 50), rgb(222, 184, 135), rgb(222, 184, 135), rgb(222,184, 135), rgb(238, 156, 50));
+    border-style: solid;
+    border-radius: 15%;
+    border-color: rgb(165, 45, 45);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    max-width: 500px;
+    box-shadow: 0 0 20px 0 rgb(222,184, 135);
+}
+  
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -25px;
+}
+  
+hr {
+    height: 4px;
+    background-color: rgb(165, 45, 45);
+    border-color: rgb(165, 45, 45);
+}
+  
+.bottom-line {
+    margin-top: 25px;
+}
+  
+h1, h2 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+}
+
+.item p {
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+  
+.flavor, .dessert, .other {
+    text-align: left;
+    width: 75%;
+}
+
+.price, .price-des, .price-oth {
+    text-align: right;
+    width: 25%;
+}
+
+.flavor, .price {
+    font-size: 20px;
+}
+
+.dessert, .price-des, .other, .price-oth {
+    font-size: 15px;
+}
+  
+/* FOOTER */
+  
+footer {
+    font-size: 14px;
+}
+  
+.address {
+    margin-bottom: 5px;
+}
+  
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 5px;
+    background: linear-gradient(90deg, rgb(122, 74, 14), rgb(245, 62, 113), rgb(162, 27, 27));
+    border-style: solid;
+    border-color: rgb(165, 45, 45);
+}
+  
+a:visited {
+    color: rgb(255, 255, 255);
+}
+  
+a:hover {
+    color: rgb(255, 255, 0);
+}
+
+a:active {
+    color: rgb(255, 255, 255);
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 600px) {
+    .menu {
+        border-radius: 0;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 15px;
+    }
+
+    .dessert, .price-des, .other, .price-oth {
+        font-size: 20px;
+    }
+}
