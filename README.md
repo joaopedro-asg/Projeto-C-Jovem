@@ -24,6 +24,17 @@
   - Teste Em Apis
   - Integração Backend E Frontend
 
+## Atividades
+- Lógica de Programação
+  - Projeto Doação de Sangue (Python)
+- Módulo Básico
+  - Página Web Básica (HTML)
+  - Página Eventos Web (HTML)
+  - Site Pizza Delícia (HTML)
+  - Página Café Menu (CSS)
+  - Página Museu Virtual (HTML e CSS)
+  - Site Pizza Delícia (HTML e CSS)
+
 ## Tecnologias utilizadas
 - ``Python``
 - ``HTML``
